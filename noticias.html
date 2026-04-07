@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias – Marisul Transportes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{700:'#1a3a5c',800:'#0f2840',900:'#0a1f33',950:'#06131f'}}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-navy-950 text-white text-xs py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-6"><span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></span><span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>Seg–Sex: 7h–18h | Sáb: 7h–13h</span></div>
+      <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>Rua Perimetral, 1420 – Marau/RS</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-navy-900 sticky top-0 z-50 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center shadow-lg"><svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 17l4 4 4-4m-4-5v9M3 5l7.89-2.37L17 4.5M3 5v12l9 4 9-4V5M3 5l9 4 9-4"/></svg></div><div class="leading-tight"><div class="text-white font-extrabold text-base tracking-wide">MARISUL</div><div class="text-orange-400 text-[10px] font-semibold tracking-widest uppercase">Transportes</div></div></a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+          <a href="empresa.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">A Empresa</a>
+          <a href="servicos.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Serviços</a>
+          <a href="frota.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Nossa Frota</a>
+          <a href="linhas.html" class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Linhas e Horários</a>
+          <div class="relative group"><button class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium flex items-center gap-1">Relacionamento<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button>
+            <div class="absolute top-full left-0 mt-1 w-52 bg-navy-800 rounded-xl shadow-2xl border border-navy-700 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"><a href="relacionamento.html#dicas" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 first:rounded-t-xl">Dicas aos Usuários</a><a href="relacionamento.html#passagens" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Valor das Passagens</a><a href="relacionamento.html#passe-livre" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Passe Livre</a><a href="relacionamento.html#achados" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Achados e Perdidos</a><a href="relacionamento.html#acessibilidade" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 last:rounded-b-xl">Acessibilidade</a></div>
+          </div>
+          <a href="noticias.html" class="text-white px-3 py-2 text-sm font-medium border-b-2 border-orange-500">Notícias</a>
+        </div>
+        <div class="flex items-center gap-3"><a href="contato.html" class="hidden lg:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">Fale Conosco</a><button onclick="document.getElementById('mob').classList.toggle('hidden')" class="lg:hidden text-white p-2 rounded-lg hover:bg-navy-800"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+      </div>
+    </div>
+    <div id="mob" class="hidden lg:hidden bg-navy-800 border-t border-navy-700"><div class="px-6 py-3 space-y-0.5"><a href="index.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Início</a><a href="empresa.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">A Empresa</a><a href="servicos.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Serviços</a><a href="frota.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Nossa Frota</a><a href="linhas.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Linhas e Horários</a><a href="relacionamento.html" class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Relacionamento</a><a href="noticias.html" class="block px-3 py-2 text-sm text-white rounded-lg bg-navy-700">Notícias</a><a href="contato.html" class="block px-3 py-2 text-sm font-semibold text-orange-400 rounded-lg hover:bg-navy-700">Fale Conosco</a></div></div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="bg-navy-900 py-16 relative overflow-hidden">
+    <div class="absolute right-0 top-0 w-72 h-72 bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="flex items-center gap-2 text-gray-400 text-sm mb-3"><a href="index.html" class="hover:text-orange-400">Início</a><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg><span class="text-orange-400">Notícias</span></div>
+      <h1 class="text-4xl font-extrabold text-white">Notícias</h1>
+      <p class="text-gray-400 mt-2 max-w-lg">Fique por dentro das novidades, investimentos e comunicados da Marisul Transportes.</p>
+    </div>
+  </section>
+
+  <!-- News Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Featured -->
+      <div class="mb-12 grid lg:grid-cols-5 gap-6">
+        <div class="lg:col-span-3 bg-navy-950 rounded-3xl overflow-hidden group cursor-pointer">
+          <div class="h-56 bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-orange-500/10"></div>
+            <svg class="w-20 h-20 text-orange-500/30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">Novidade</span>
+          </div>
+          <div class="p-7">
+            <div class="text-gray-500 text-xs mb-3">15 de março de 2024</div>
+            <h2 class="text-white font-extrabold text-xl mb-3 group-hover:text-orange-400 transition-colors">Marisul investe em 4 novos ônibus com tecnologia Euro 6 para a frota urbana</h2>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">A Marisul Transportes anuncia a incorporação de quatro novos veículos à sua frota urbana. Os ônibus, com tecnologia Euro 6 de baixa emissão, elevadores para cadeirantes e ar-condicionado, representam um investimento de R$ 2,8 milhões no transporte público de Marau.</p>
+            <span class="inline-flex items-center gap-1 text-orange-400 text-sm font-semibold">Leia mais <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+          </div>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-6">
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group cursor-pointer hover:border-orange-200 transition-colors">
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Comunicado</span>
+            <div class="text-gray-400 text-xs mb-2">8 de março de 2024</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Alteração de horários na Linha 05 – Distrito Industrial</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">A partir do dia 15 de março, a Linha 05 passa a ter saída adicional às 05h45 nos dias úteis para atender o turno da manhã das indústrias.</p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group cursor-pointer hover:border-orange-200 transition-colors">
+            <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">Sustentabilidade</span>
+            <div class="text-gray-400 text-xs mb-2">22 de fevereiro de 2024</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Marisul reduz emissões em 18% com renovação da frota</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">O processo contínuo de renovação dos veículos resultou em redução significativa nas emissões de poluentes, contribuindo para a qualidade do ar em Marau.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- More News -->
+      <h3 class="text-xl font-bold text-navy-900 mb-6 border-b border-gray-200 pb-4">Mais notícias</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Empresa</span>
+            <div class="text-gray-400 text-xs mb-2">10 de fevereiro de 2024</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">44 anos encurtando caminhos em Marau</h3>
+            <p class="text-gray-500 text-sm">Em 2024, a Marisul completa 44 anos de operação ininterrupta no transporte coletivo de Marau e região.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Comunidade</span>
+            <div class="text-gray-400 text-xs mb-2">28 de janeiro de 2024</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Marisul apoia Projeto Escola Segura 2024</h3>
+            <p class="text-gray-500 text-sm">Pela décima segunda edição consecutiva, a Marisul participa do projeto municipal que garante transporte gratuito para estudantes em período de matrícula escolar.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Segurança</span>
+            <div class="text-gray-400 text-xs mb-2">15 de janeiro de 2024</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Câmeras de segurança instaladas em toda a frota</h3>
+            <p class="text-gray-500 text-sm">O monitoramento por câmeras foi expandido para 100% dos veículos, garantindo mais segurança para passageiros e motoristas.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Tecnologia</span>
+            <div class="text-gray-400 text-xs mb-2">5 de dezembro de 2023</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Sistema de rastreamento GPS em tempo real</h3>
+            <p class="text-gray-500 text-sm">A Marisul passa a disponibilizar rastreamento em tempo real de todos os veículos, permitindo que passageiros acompanhem a localização dos ônibus.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Acessibilidade</span>
+            <div class="text-gray-400 text-xs mb-2">18 de novembro de 2023</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Marisul conquista certificação de acessibilidade municipal</h3>
+            <p class="text-gray-500 text-sm">Pela terceira vez consecutiva, a Prefeitura de Marau certifica a Marisul como empresa modelo em acessibilidade no transporte público.</p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 rounded-2xl overflow-hidden group cursor-pointer hover:border-orange-300 transition-colors">
+          <div class="h-36 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div class="p-5">
+            <span class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full mb-2">Comunicado</span>
+            <div class="text-gray-400 text-xs mb-2">3 de novembro de 2023</div>
+            <h3 class="font-bold text-navy-900 mb-2 group-hover:text-orange-500 transition-colors">Horários especiais para o feriado de 15 de novembro</h3>
+            <p class="text-gray-500 text-sm">Confira os horários especiais programados para o feriado da Proclamação da República e planeje sua viagem com antecedência.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-gray-400 pt-16 pb-8 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div><div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 bg-orange-500 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 17l4 4 4-4m-4-5v9M3 5l7.89-2.37L17 4.5M3 5v12l9 4 9-4V5M3 5l9 4 9-4"/></svg></div><div><div class="text-white font-extrabold tracking-wide">MARISUL</div><div class="text-orange-400 text-[10px] font-semibold tracking-widest uppercase">Transportes</div></div></div><p class="text-sm leading-relaxed">Encurtando caminhos e tornando o dia a dia do marauense mais fácil, prático e confortável desde 1980.</p></div>
+        <div><h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Serviços</h4><ul class="space-y-2 text-sm"><li><a href="servicos.html" class="hover:text-orange-400">Transporte Coletivo</a></li><li><a href="servicos.html" class="hover:text-orange-400">Transporte de Funcionários</a></li><li><a href="servicos.html" class="hover:text-orange-400">Transporte Escolar</a></li><li><a href="servicos.html" class="hover:text-orange-400">Transporte Fretado</a></li><li><a href="servicos.html" class="hover:text-orange-400">Busdoor</a></li></ul></div>
+        <div><h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">A Empresa</h4><ul class="space-y-2 text-sm"><li><a href="empresa.html" class="hover:text-orange-400">Sobre Nós</a></li><li><a href="frota.html" class="hover:text-orange-400">Nossa Frota</a></li><li><a href="linhas.html" class="hover:text-orange-400">Linhas e Horários</a></li><li><a href="relacionamento.html" class="hover:text-orange-400">Relacionamento</a></li><li><a href="noticias.html" class="hover:text-orange-400">Notícias</a></li></ul></div>
+        <div><h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contato</h4><ul class="space-y-3 text-sm"><li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></li><li class="flex items-start gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg><span>Seg–Sex: 7h–18h<br>Sáb: 7h–13h</span></li></ul></div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs"><p>&copy; 2024 Marisul Transportes. Todos os direitos reservados.</p><div class="flex gap-4"><a href="#" class="hover:text-orange-400">Política de Privacidade</a><a href="#" class="hover:text-orange-400">Política de Cookies</a></div></div>
+    </div>
+  </footer>
+</body>
+</html>

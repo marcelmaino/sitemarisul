@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços – Marisul Transportes</title>
+  <meta name="description"
+    content="Transporte coletivo em Marau/RS. Linhas urbanas, fretamento e transporte de passageiros.">
+  <link rel="icon" href="imgs/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { navy: { 700: '#1a3a5c', 800: '#0f2840', 900: '#0a1f33', 950: '#06131f' } } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-navy-950 text-white text-xs py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></span>
+        <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+              clip-rule="evenodd" />
+          </svg>Seg–Sex: 7h–18h | Sáb: 7h–13h</span>
+      </div>
+      <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+          viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        </svg>Rua Perimetral, 1420 – Marau/RS</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-navy-900 sticky top-0 z-50 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+        </a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+          <a href="empresa.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">A Empresa</a>
+          <a href="servicos.html"
+            class="text-white px-3 py-2 text-sm font-medium border-b-2 border-orange-500">Serviços</a>
+          <a href="frota.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Nossa Frota</a>
+          <a href="linhas.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Linhas e
+            Horários</a>
+          <div class="relative group"><button
+              class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors flex items-center gap-1">Relacionamento<svg
+                class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg></button>
+            <div
+              class="absolute top-full left-0 mt-1 w-52 bg-navy-800 rounded-xl shadow-2xl border border-navy-700 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+              <a href="relacionamento.html#dicas"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 first:rounded-t-xl">Dicas
+                aos Usuários</a>
+              <a href="relacionamento.html#passagens"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Valor das
+                Passagens</a>
+              <a href="relacionamento.html#passe-livre"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Passe Livre</a>
+              <a href="relacionamento.html#achados"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Achados e
+                Perdidos</a>
+              <a href="relacionamento.html#acessibilidade"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 last:rounded-b-xl">Acessibilidade</a>
+            </div>
+          </div>
+          <!-- <a href="noticias.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Notícias</a> -->
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="contato.html"
+            class="hidden lg:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">Fale
+            Conosco</a>
+          <button onclick="document.getElementById('mob').classList.toggle('hidden')"
+            class="lg:hidden text-white p-2 rounded-lg hover:bg-navy-800"><svg class="w-6 h-6" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+    <div id="mob" class="hidden lg:hidden bg-navy-800 border-t border-navy-700">
+      <div class="px-6 py-3 space-y-0.5"><a href="index.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Início</a><a
+          href="empresa.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">A Empresa</a><a
+          href="servicos.html" class="block px-3 py-2 text-sm text-white rounded-lg bg-navy-700">Serviços</a><a
+          href="frota.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Nossa Frota</a><a
+          href="linhas.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Linhas e
+          Horários</a><a href="relacionamento.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Relacionamento</a><a
+          <!-- <a href="noticias.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Notícias</a> --><a
+          href="contato.html"
+          class="block px-3 py-2 text-sm font-semibold text-orange-400 rounded-lg hover:bg-navy-700">Fale Conosco</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="bg-navy-900 py-16 relative overflow-hidden">
+    <div class="absolute right-0 top-0 w-72 h-72 bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="flex items-center gap-2 text-gray-400 text-sm mb-3">
+        <a href="index.html" class="hover:text-orange-400 transition-colors">Início</a>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="text-orange-400">Serviços</span>
+      </div>
+      <h1 class="text-4xl font-extrabold text-white">Nossos Serviços</h1>
+      <p class="text-gray-400 mt-2 max-w-lg">Soluções completas de transporte para passageiros, empresas e escolas.</p>
+    </div>
+  </section>
+
+  <!-- Service 1: Transporte Coletivo -->
+  <section class="py-20 bg-white" id="coletivo">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div
+          class="bg-[url('imgs/transporte-coletivo.jpg')] bg-cover bg-center rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-orange-500/10 rounded-full"></div>
+
+        </div>
+        <div>
+          <div
+            class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+            Serviço Municipal</div>
+          <h2 class="text-3xl font-extrabold text-navy-900 mb-4">Transporte Coletivo</h2>
+          <p class="text-gray-500 leading-relaxed mb-4">A Marisul Transportes detém a concessão municipal para o serviço
+            de transporte coletivo urbano de Marau desde 1996. Com linhas regulares que cobrem praticamente todos os
+            bairros da cidade, o serviço opera todos os dias da semana com horários fixos e previsíveis.</p>
+          <p class="text-gray-500 leading-relaxed mb-6">Todos os nossos ônibus urbanos são equipados com dispositivos de
+            acessibilidade para pessoas com mobilidade reduzida, garantindo que todos os marauenses possam usufruir do
+            serviço com dignidade e conforto.</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>5 linhas urbanas</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>100% acessível</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Horários regulares</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Cobertura em toda Marau</div>
+          </div>
+          <a href="linhas.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-xl font-semibold transition-all">Ver
+            Linhas e Horários <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 2: Transporte de Funcionários -->
+  <section class="py-20 bg-gray-50" id="funcionarios">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="order-2 lg:order-1">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+            Para Empresas</div>
+          <h2 class="text-3xl font-extrabold text-navy-900 mb-4">Transporte de Funcionários</h2>
+          <p class="text-gray-500 leading-relaxed mb-4">Solução de transporte corporativo desenvolvida especialmente
+            para empresas que precisam deslocar seus colaboradores com pontualidade, conforto e segurança. O serviço é
+            contínuo, com rota e horário estabelecidos conjuntamente com o contratante.</p>
+          <p class="text-gray-500 leading-relaxed mb-6">O veículo fica exclusivamente dedicado à empresa contratante,
+            garantindo privacidade, flexibilidade e um padrão de serviço superior. Ideal para indústrias, comércios e
+            empresas de todos os portes.</p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-gray-100">
+              <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0"><svg
+                  class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg></div>
+              <div>
+                <div class="font-semibold text-navy-900 text-sm">Rota personalizada</div>
+                <div class="text-gray-400 text-xs">Desenvolvida conforme as necessidades da empresa</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-gray-100">
+              <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0"><svg
+                  class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg></div>
+              <div>
+                <div class="font-semibold text-navy-900 text-sm">Exclusividade</div>
+                <div class="text-gray-400 text-xs">Veículo dedicado apenas aos colaboradores da empresa</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-gray-100">
+              <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0"><svg
+                  class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg></div>
+              <div>
+                <div class="font-semibold text-navy-900 text-sm">Contrato flexível</div>
+                <div class="text-gray-400 text-xs">Condições adaptadas ao seu negócio</div>
+              </div>
+            </div>
+          </div>
+          <a href="contato.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-xl font-semibold transition-all">Solicitar
+            Orçamento <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg></a>
+        </div>
+        <div
+          class="order-1 lg:order-2 bg-[url('imgs/transporte-funcionarios.jpg')] bg-cover bg-center rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-orange-500/10 rounded-full"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 3: Escolar -->
+  <section class="py-20 bg-white" id="escolar">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div
+          class="bg-[url('imgs/transporte-escolar.jpg')] bg-cover bg-center rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+
+
+        </div>
+        <div>
+          <div
+            class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+            Para Escolas</div>
+          <h2 class="text-3xl font-extrabold text-navy-900 mb-4">Transporte Escolar</h2>
+          <p class="text-gray-500 leading-relaxed mb-4">A Marisul participa de licitações municipais para prestação do
+            serviço de transporte escolar, com rotas e horários definidos pelos municípios contratantes. Segurança e
+            pontualidade são prioridades absolutas quando o assunto é o transporte de estudantes.</p>
+          <p class="text-gray-500 leading-relaxed mb-6">Nossos motoristas são qualificados e os veículos atendem todas
+            as exigências legais e de segurança para o transporte escolar, incluindo cinto de segurança obrigatório e
+            normas do Código de Trânsito Brasileiro.</p>
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Motoristas habilitados</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Veículos adequados</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Conformidade legal</div>
+            <div class="flex items-center gap-2 text-sm text-gray-600"><svg
+                class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>Segurança em primeiro lugar</div>
+          </div>
+          <a href="contato.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-xl font-semibold transition-all">Solicitar
+            Informações <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 4: Fretamento -->
+  <section class="py-20 bg-gray-50" id="fretamento">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="order-2 lg:order-1">
+          <div
+            class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+            Para Grupos e Eventos</div>
+          <h2 class="text-3xl font-extrabold text-navy-900 mb-4">Transporte Fretado</h2>
+          <p class="text-gray-500 leading-relaxed mb-4">O fretamento eventual atende empresas, público em geral e
+            organizações escolares que precisam de transporte para eventos específicos, excursões ou transferências
+            locais. Serviço ágil com agendamento flexível.</p>
+          <p class="text-gray-500 leading-relaxed mb-6">Disponibilizamos ônibus ou micro-ônibus conforme o tamanho do
+            grupo, com motoristas experientes e veículos em excelente estado de conservação. Ideal para festas, viagens,
+            excursões, visitas técnicas e outros eventos.</p>
+          <div class="bg-orange-50 border border-orange-100 rounded-2xl p-5 mb-6">
+            <h4 class="font-semibold text-navy-900 mb-3">Situações ideais para o fretamento:</h4>
+            <div class="grid grid-cols-2 gap-2 text-sm text-gray-600">
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Excursões escolares</div>
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Eventos corporativos</div>
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Passeios e turismo</div>
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Festas e formaturas</div>
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Visitas técnicas</div>
+              <div class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Transferências locais</div>
+            </div>
+          </div>
+          <a href="contato.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-xl font-semibold transition-all">Solicitar
+            Fretamento <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg></a>
+        </div>
+        <div
+          class="order-1 lg:order-2 bg-[url('imgs/transporte-fretado.jpg')] bg-cover bg-center rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 5: Busdoor -->
+  <section class="py-20 bg-white" id="busdoor">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div
+          class="bg-gradient-to-br from-navy-900 to-navy-950 rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-orange-500/10 rounded-full"></div>
+          <div class="text-center text-white relative z-10">
+            <div class="w-20 h-20 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+              </svg>
+            </div>
+            <p class="text-gray-400 text-sm">Publicidade em Ônibus</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+            Publicidade Urbana</div>
+          <h2 class="text-3xl font-extrabold text-navy-900 mb-4">Busdoor</h2>
+          <p class="text-gray-500 leading-relaxed mb-4">O Busdoor é uma mídia de publicidade que apresenta resultados
+            imediatos ao investidor. Sua empresa divulgada nos painéis traseiros dos nossos ônibus circula por toda
+            Marau diariamente, alcançando milhares de pessoas.</p>
+          <p class="text-gray-500 leading-relaxed mb-6">Pesquisas indicam que a publicidade em ônibus atinge alto recall
+            de marca, comparável à televisão, com custos significativamente menores. Uma solução inteligente para
+            empresas que desejam aumentar sua visibilidade na cidade.</p>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="text-center p-3 bg-gray-50 rounded-xl">
+              <div class="text-2xl font-black text-orange-500">Alta</div>
+              <div class="text-gray-400 text-xs mt-1">Visibilidade</div>
+            </div>
+            <div class="text-center p-3 bg-gray-50 rounded-xl">
+              <div class="text-2xl font-black text-orange-500">Baixo</div>
+              <div class="text-gray-400 text-xs mt-1">Custo</div>
+            </div>
+            <div class="text-center p-3 bg-gray-50 rounded-xl">
+              <div class="text-2xl font-black text-orange-500">Toda</div>
+              <div class="text-gray-400 text-xs mt-1">a Cidade</div>
+            </div>
+          </div>
+          <a href="contato.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-6 py-3 rounded-xl font-semibold transition-all">Anunciar
+            no Busdoor <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-orange-500 py-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500"></div>
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Pronto para começar?</h2>
+      <p class="text-orange-100 mb-8 max-w-md mx-auto">Entre em contato agora e receba uma proposta personalizada para a
+        sua necessidade de transporte.</p>
+      <a href="contato.html"
+        class="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl">Solicitar
+        Orçamento <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-gray-400 pt-16 pb-8 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+          </div>
+          <p class="text-sm leading-relaxed">Encurtando caminhos e tornando o dia a dia do marauense mais fácil, prático
+            e confortável desde 1980.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Serviços</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#coletivo" class="hover:text-orange-400 transition-colors">Transporte Coletivo</a></li>
+            <li><a href="#funcionarios" class="hover:text-orange-400 transition-colors">Transporte de Funcionários</a>
+            </li>
+            <li><a href="#escolar" class="hover:text-orange-400 transition-colors">Transporte Escolar</a></li>
+            <li><a href="#fretamento" class="hover:text-orange-400 transition-colors">Transporte Fretado</a></li>
+            <li><a href="#busdoor" class="hover:text-orange-400 transition-colors">Busdoor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">A Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="empresa.html" class="hover:text-orange-400 transition-colors">Sobre Nós</a></li>
+            <li><a href="frota.html" class="hover:text-orange-400 transition-colors">Nossa Frota</a></li>
+            <li><a href="linhas.html" class="hover:text-orange-400 transition-colors">Linhas e Horários</a></li>
+            <li><a href="relacionamento.html" class="hover:text-orange-400 transition-colors">Relacionamento</a></li>
+            <!-- <li><a href="noticias.html" class="hover:text-orange-400 transition-colors">Notícias</a></li> -->
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contato</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd" />
+              </svg><span>Seg–Sex: 7h–18h<br>Sáb: 7h–13h</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
+        <p>&copy; <span id="ano-atual"></span> Marisul Transportes. Todos os direitos reservados.</p>
+        <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+        <div class="flex gap-4"><a href="#" class="hover:text-orange-400">Política de Privacidade</a><a href="#"
+            class="hover:text-orange-400">Política de Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

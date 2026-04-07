@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco – Marisul Transportes</title>
+  <meta name="description"
+    content="Transporte coletivo em Marau/RS. Linhas urbanas, fretamento e transporte de passageiros.">
+  <link rel="icon" href="imgs/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { navy: { 700: '#1a3a5c', 800: '#0f2840', 900: '#0a1f33', 950: '#06131f' } } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-navy-950 text-white text-xs py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-6"><span class="flex items-center gap-1.5 text-gray-400"><svg
+            class="w-3.5 h-3.5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></span><span
+          class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+              clip-rule="evenodd" />
+          </svg>Seg–Sex: 7h–18h | Sáb: 7h–13h</span></div>
+      <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+          viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        </svg>Rua Perimetral, 1420 – Marau/RS</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-navy-900 sticky top-0 z-50 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+        </a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+          <a href="empresa.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">A Empresa</a>
+          <a href="servicos.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Serviços</a>
+          <a href="frota.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Nossa Frota</a>
+          <a href="linhas.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Linhas e
+            Horários</a>
+          <div class="relative group"><button
+              class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium flex items-center gap-1">Relacionamento<svg
+                class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg></button>
+            <div
+              class="absolute top-full left-0 mt-1 w-52 bg-navy-800 rounded-xl shadow-2xl border border-navy-700 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+              <a href="relacionamento.html#dicas"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 first:rounded-t-xl">Dicas
+                aos Usuários</a><a href="relacionamento.html#passagens"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Valor das
+                Passagens</a><a href="relacionamento.html#passe-livre"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Passe
+                Livre</a><a href="relacionamento.html#achados"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Achados e
+                Perdidos</a><a href="relacionamento.html#acessibilidade"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 last:rounded-b-xl">Acessibilidade</a>
+            </div>
+          </div>
+          <!--<a href="noticias.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Notícias</a>-->
+        </div>
+        <div class="flex items-center gap-3"><a href="contato.html"
+            class="hidden lg:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all border-b-2 border-orange-300">Fale
+            Conosco</a><button onclick="document.getElementById('mob').classList.toggle('hidden')"
+            class="lg:hidden text-white p-2 rounded-lg hover:bg-navy-800"><svg class="w-6 h-6" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg></button></div>
+      </div>
+    </div>
+    <div id="mob" class="hidden lg:hidden bg-navy-800 border-t border-navy-700">
+      <div class="px-6 py-3 space-y-0.5"><a href="index.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Início</a><a
+          href="empresa.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">A Empresa</a><a
+          href="servicos.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Serviços</a><a
+          href="frota.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Nossa Frota</a><a
+          href="linhas.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Linhas e
+          Horários</a><a href="relacionamento.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Relacionamento</a>
+        <!--<a
+          href="noticias.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Notícias</a>--><a
+          href="contato.html" class="block px-3 py-2 text-sm font-semibold text-orange-400 rounded-lg bg-navy-700">Fale
+          Conosco</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="bg-navy-900 py-16 relative overflow-hidden">
+    <div class="absolute right-0 top-0 w-72 h-72 bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="flex items-center gap-2 text-gray-400 text-sm mb-3"><a href="index.html"
+          class="hover:text-orange-400">Início</a><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg><span class="text-orange-400">Fale Conosco</span></div>
+      <h1 class="text-4xl font-extrabold text-white">Fale Conosco</h1>
+      <p class="text-gray-400 mt-2 max-w-lg">Estamos prontos para atender você. Escolha o canal mais conveniente.</p>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-14">
+
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-extrabold text-navy-900 mb-2">Envie uma mensagem</h2>
+          <p class="text-gray-500 mb-8">Responderemos em até 1 dia útil.</p>
+          <form onsubmit="handleSubmit(event)" class="space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1.5">Nome *</label>
+                <input type="text" required placeholder="Seu nome completo"
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all">
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-1.5">Telefone</label>
+                <input type="tel" placeholder="(54) 99999-9999"
+                  class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">E-mail *</label>
+              <input type="email" required placeholder="seu@email.com"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Assunto *</label>
+              <select required
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all bg-white">
+                <option value="" disabled selected>Selecione o assunto</option>
+                <option>Informações sobre linhas e horários</option>
+                <option>Solicitação de fretamento</option>
+                <option>Transporte de funcionários</option>
+                <option>Transporte escolar</option>
+                <option>Busdoor / Publicidade</option>
+                <option>Reclamação ou sugestão</option>
+                <option>Achados e Perdidos</option>
+                <option>Passe Livre / Acessibilidade</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-1.5">Mensagem *</label>
+              <textarea required rows="5" placeholder="Descreva sua dúvida, sugestão ou solicitação..."
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all resize-none"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-orange-500 hover:bg-orange-400 text-white px-6 py-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+              Enviar Mensagem
+            </button>
+          </form>
+          <div id="success-msg"
+            class="hidden mt-4 bg-green-50 border border-green-200 rounded-xl p-4 flex items-center gap-3">
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd" />
+            </svg>
+            <p class="text-green-700 text-sm font-medium">Mensagem enviada com sucesso! Retornaremos em breve.</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-6">
+          <h2 class="text-2xl font-extrabold text-navy-900 mb-2">Outras formas de contato</h2>
+          <p class="text-gray-500 mb-8">Prefere falar pessoalmente ou por telefone? Estamos disponíveis.</p>
+
+          <div class="bg-navy-950 rounded-2xl p-6 text-white flex gap-5">
+            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><svg
+                class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg></div>
+            <div>
+              <div class="font-bold mb-1">Telefone</div>
+              <a href="tel:5433711500" class="text-orange-400 font-semibold text-lg hover:text-orange-300">(54)
+                3371-1500</a>
+              <p class="text-gray-400 text-sm mt-1">Segunda a Sexta: 7h às 18h<br>Sábado: 7h às 13h</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex gap-5">
+            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><svg
+                class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg></div>
+            <div>
+              <div class="font-bold text-navy-900 mb-1">E-mail</div>
+              <a href="mailto:contato@marisul.com.br"
+                class="text-orange-500 font-semibold hover:text-orange-400">contato@marisul.com.br</a>
+              <p class="text-gray-500 text-sm mt-1">Respondemos em até 1 dia útil.</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 flex gap-5">
+            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><svg
+                class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg></div>
+            <div>
+              <div class="font-bold text-navy-900 mb-1">Sede / Terminal</div>
+              <p class="text-gray-700 font-medium">Rua Perimetral, 1420</p>
+              <p class="text-gray-500 text-sm">Marau – RS, CEP 99150-000</p>
+              <p class="text-gray-500 text-sm mt-1">Segunda a Sexta: 7h às 18h<br>Sábado: 7h às 13h</p>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div
+            class="rounded-2xl overflow-hidden border border-gray-200 h-52 bg-gray-100 flex items-center justify-center relative">
+            <div class="text-center">
+              <svg class="w-10 h-10 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <p class="text-gray-400 text-sm">Rua Perimetral, 1420 – Marau/RS</p>
+              <a href="https://maps.google.com/?q=Rua+Perimetral+1420+Marau+RS" target="_blank" rel="noopener"
+                class="mt-2 inline-flex items-center gap-1 text-orange-500 text-xs font-semibold hover:text-orange-400">Ver
+                no Google Maps <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fretamento CTA -->
+  <section class="py-16 bg-navy-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6">
+          <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4"><svg
+              class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg></div>
+          <h3 class="text-white font-bold text-lg mb-2">Transporte de Funcionários</h3>
+          <p class="text-gray-400 text-sm">Soluções customizadas para transportar sua equipe com pontualidade e
+            conforto.</p>
+        </div>
+        <div class="p-6">
+          <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4"><svg
+              class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg></div>
+          <h3 class="text-white font-bold text-lg mb-2">Transporte Escolar</h3>
+          <p class="text-gray-400 text-sm">Segurança e pontualidade para alunos do ensino básico ao superior.</p>
+        </div>
+        <div class="p-6">
+          <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4"><svg
+              class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg></div>
+          <h3 class="text-white font-bold text-lg mb-2">Fretamento</h3>
+          <p class="text-gray-400 text-sm">Viagens, excursões e eventos. Solicite um orçamento sem compromisso.</p>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="tel:5433711500"
+          class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all"><svg
+            class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>Solicite um orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-gray-400 pt-16 pb-8 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+          </div>
+          <p class="text-sm leading-relaxed">Encurtando caminhos e tornando o dia a dia do marauense mais fácil, prático
+            e confortável desde 1980.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Serviços</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Coletivo</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte de Funcionários</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Escolar</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Fretado</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Busdoor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">A Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="empresa.html" class="hover:text-orange-400">Sobre Nós</a></li>
+            <li><a href="frota.html" class="hover:text-orange-400">Nossa Frota</a></li>
+            <li><a href="linhas.html" class="hover:text-orange-400">Linhas e Horários</a></li>
+            <li><a href="relacionamento.html" class="hover:text-orange-400">Relacionamento</a></li>
+            <!--<li><a href="noticias.html" class="hover:text-orange-400">Notícias</a></li>-->
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contato</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd" />
+              </svg><span>Seg–Sex: 7h–18h<br>Sáb: 7h–13h</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
+        <p>&copy; <span id="ano-atual"></span> Marisul Transportes. Todos os direitos reservados.</p>
+        <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+        <div class="flex gap-4"><a href="#" class="hover:text-orange-400">Política de Privacidade</a><a href="#"
+            class="hover:text-orange-400">Política de Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('success-msg').classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => document.getElementById('success-msg').classList.add('hidden'), 5000);
+    }
+  </script>
+</body>
+
+</html>

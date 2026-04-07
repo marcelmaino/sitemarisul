@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linhas e Horários – Marisul Transportes</title>
+  <meta name="description"
+    content="Transporte coletivo em Marau/RS. Linhas urbanas, fretamento e transporte de passageiros.">
+  <link rel="icon" href="imgs/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { navy: { 700: '#1a3a5c', 800: '#0f2840', 900: '#0a1f33', 950: '#06131f' } } } } }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-navy-950 text-white text-xs py-2 hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-6"><span class="flex items-center gap-1.5 text-gray-400"><svg
+            class="w-3.5 h-3.5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></span><span
+          class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+              clip-rule="evenodd" />
+          </svg>Seg–Sex: 7h–18h | Sáb: 7h–13h</span></div>
+      <span class="flex items-center gap-1.5 text-gray-400"><svg class="w-3.5 h-3.5 text-orange-500" fill="currentColor"
+          viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        </svg>Rua Perimetral, 1420 – Marau/RS</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-navy-900 sticky top-0 z-50 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3"><img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+        </a>
+        <div class="hidden lg:flex items-center gap-0.5">
+          <a href="index.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+          <a href="empresa.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">A Empresa</a>
+          <a href="servicos.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Serviços</a>
+          <a href="frota.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Nossa Frota</a>
+          <a href="linhas.html" class="text-white px-3 py-2 text-sm font-medium border-b-2 border-orange-500">Linhas e
+            Horários</a>
+          <div class="relative group"><button
+              class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium flex items-center gap-1">Relacionamento<svg
+                class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg></button>
+            <div
+              class="absolute top-full left-0 mt-1 w-52 bg-navy-800 rounded-xl shadow-2xl border border-navy-700 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+              <a href="relacionamento.html#dicas"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 first:rounded-t-xl">Dicas
+                aos Usuários</a><a href="relacionamento.html#passagens"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Valor das
+                Passagens</a><a href="relacionamento.html#passe-livre"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Passe
+                Livre</a><a href="relacionamento.html#achados"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700">Achados e
+                Perdidos</a><a href="relacionamento.html#acessibilidade"
+                class="block px-4 py-2.5 text-sm text-gray-300 hover:text-orange-400 hover:bg-navy-700 last:rounded-b-xl">Acessibilidade</a>
+            </div>
+          </div>
+          <!--<a href="noticias.html"
+            class="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors">Notícias</a>-->
+        </div>
+        <div class="flex items-center gap-3"><a href="contato.html"
+            class="hidden lg:inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all">Fale
+            Conosco</a><button onclick="document.getElementById('mob').classList.toggle('hidden')"
+            class="lg:hidden text-white p-2 rounded-lg hover:bg-navy-800"><svg class="w-6 h-6" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg></button></div>
+      </div>
+    </div>
+    <div id="mob" class="hidden lg:hidden bg-navy-800 border-t border-navy-700">
+      <div class="px-6 py-3 space-y-0.5"><a href="index.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Início</a><a
+          href="empresa.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">A Empresa</a><a
+          href="servicos.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Serviços</a><a
+          href="frota.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Nossa Frota</a><a
+          href="linhas.html" class="block px-3 py-2 text-sm text-white rounded-lg bg-navy-700">Linhas e Horários</a><a
+          href="relacionamento.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Relacionamento</a>
+        <!--<a
+          href="noticias.html"
+          class="block px-3 py-2 text-sm text-gray-300 hover:text-white rounded-lg hover:bg-navy-700">Notícias</a>--><a
+          href="contato.html"
+          class="block px-3 py-2 text-sm font-semibold text-orange-400 rounded-lg hover:bg-navy-700">Fale Conosco</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Banner -->
+  <section class="bg-navy-900 py-16 relative overflow-hidden">
+    <div class="absolute right-0 top-0 w-72 h-72 bg-orange-500/5 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="flex items-center gap-2 text-gray-400 text-sm mb-3"><a href="index.html"
+          class="hover:text-orange-400">Início</a><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd" />
+        </svg><span class="text-orange-400">Linhas e Horários</span></div>
+      <h1 class="text-4xl font-extrabold text-white">Linhas e Horários</h1>
+      <p class="text-gray-400 mt-2 max-w-lg">Consulte as linhas urbanas de Marau e os horários de cada itinerário.</p>
+    </div>
+  </section>
+
+  <!-- Info bar -->
+  <div class="bg-orange-500 py-3">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-between gap-3 text-white text-sm">
+      <span class="font-medium">Horários sujeitos a alteração. Confirme pelo telefone em caso de dúvida.</span>
+      <a href="tel:5433711500" class="flex items-center gap-1.5 font-bold hover:text-navy-900 transition-colors"><svg
+          class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+        </svg>(54) 3371-1500</a>
+    </div>
+  </div>
+
+  <!-- Lines Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <span class="inline-block text-orange-500 font-semibold text-xs uppercase tracking-widest mb-3">Transporte
+          Urbano</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-navy-900">Linhas Urbanas de Marau</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Atendemos os principais bairros da cidade com pontualidade e
+          conforto.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="flex flex-wrap gap-2 mb-10 justify-center">
+        <button onclick="filterLines('all')" id="btn-all"
+          class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold bg-orange-500 text-white transition-all">Todas
+          as Linhas</button>
+        <button onclick="filterLines('norte')" id="btn-norte"
+          class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-orange-100 transition-all">Zona
+          Norte</button>
+        <button onclick="filterLines('sul')" id="btn-sul"
+          class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-orange-100 transition-all">Zona
+          Sul</button>
+        <button onclick="filterLines('leste')" id="btn-leste"
+          class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-orange-100 transition-all">Zona
+          Leste</button>
+        <button onclick="filterLines('oeste')" id="btn-oeste"
+          class="filter-btn px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-orange-100 transition-all">Zona
+          Oeste</button>
+      </div>
+
+      <!-- Lines grid -->
+      <div class="space-y-4" id="lines-container">
+
+        <!-- Linha 01 -->
+        <div class="line-card border border-gray-200 rounded-2xl overflow-hidden" data-zone="norte">
+          <button onclick="toggleLine('l01')"
+            class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><span
+                  class="text-white font-extrabold text-sm">01</span></div>
+              <div>
+                <div class="font-bold text-navy-900">Terminal Central → Bairro São Cristóvão</div>
+                <div class="text-sm text-gray-500 mt-0.5">Zona Norte · 35 min · 18 paradas</div>
+              </div>
+            </div>
+            <svg id="icon-l01" class="w-5 h-5 text-gray-400 transition-transform" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="l01" class="hidden border-t border-gray-100 bg-gray-50">
+            <div class="p-6 grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Dias Úteis</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:40</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:20</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">08:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">09:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">10:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">12:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">13:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">14:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">15:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">16:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:40</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">18:20</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Sábado</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">09:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">10:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">12:00</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Itinerário Principal</h4>
+                <ol class="text-sm text-gray-600 space-y-1.5">
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Terminal Central</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Av. Julio de Castilhos
+                  </li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Hospital São Francisco
+                  </li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Escola Estadual</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Bairro São Cristóvão
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha 02 -->
+        <div class="line-card border border-gray-200 rounded-2xl overflow-hidden" data-zone="sul">
+          <button onclick="toggleLine('l02')"
+            class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-navy-800 rounded-xl flex items-center justify-center flex-shrink-0"><span
+                  class="text-white font-extrabold text-sm">02</span></div>
+              <div>
+                <div class="font-bold text-navy-900">Terminal Central → Vila Nova</div>
+                <div class="text-sm text-gray-500 mt-0.5">Zona Sul · 28 min · 15 paradas</div>
+              </div>
+            </div>
+            <svg id="icon-l02" class="w-5 h-5 text-gray-400 transition-transform" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="l02" class="hidden border-t border-gray-100 bg-gray-50">
+            <div class="p-6 grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Dias Úteis</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:15</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">08:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">09:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">12:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">14:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">16:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:15</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">18:00</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Sábado</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:15</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">08:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">10:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">12:00</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Itinerário Principal</h4>
+                <ol class="text-sm text-gray-600 space-y-1.5">
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Terminal Central</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Rua Perimetral</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Prefeitura Municipal</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Supermercado Sul</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Vila Nova</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha 03 -->
+        <div class="line-card border border-gray-200 rounded-2xl overflow-hidden" data-zone="leste">
+          <button onclick="toggleLine('l03')"
+            class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><span
+                  class="text-white font-extrabold text-sm">03</span></div>
+              <div>
+                <div class="font-bold text-navy-900">Terminal Central → Bairro Planalto</div>
+                <div class="text-sm text-gray-500 mt-0.5">Zona Leste · 40 min · 21 paradas</div>
+              </div>
+            </div>
+            <svg id="icon-l03" class="w-5 h-5 text-gray-400 transition-transform" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="l03" class="hidden border-t border-gray-100 bg-gray-50">
+            <div class="p-6 grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Dias Úteis</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">08:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">10:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">13:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">14:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">16:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">18:10</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Sábado</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">09:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:00</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Itinerário Principal</h4>
+                <ol class="text-sm text-gray-600 space-y-1.5">
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Terminal Central</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Rua XV de Novembro</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>SENAI Marau</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Parque Industrial Leste
+                  </li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Bairro Planalto</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha 04 -->
+        <div class="line-card border border-gray-200 rounded-2xl overflow-hidden" data-zone="oeste">
+          <button onclick="toggleLine('l04')"
+            class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-navy-800 rounded-xl flex items-center justify-center flex-shrink-0"><span
+                  class="text-white font-extrabold text-sm">04</span></div>
+              <div>
+                <div class="font-bold text-navy-900">Terminal Central → Bairro Bela Vista</div>
+                <div class="text-sm text-gray-500 mt-0.5">Zona Oeste · 32 min · 17 paradas</div>
+              </div>
+            </div>
+            <svg id="icon-l04" class="w-5 h-5 text-gray-400 transition-transform" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="l04" class="hidden border-t border-gray-100 bg-gray-50">
+            <div class="p-6 grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Dias Úteis</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:20</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:10</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">08:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">10:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">12:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">14:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">16:20</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:50</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Sábado</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">09:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:30</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Itinerário Principal</h4>
+                <ol class="text-sm text-gray-600 space-y-1.5">
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Terminal Central</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Av. Brasil</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Ginásio Municipal</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>APAE Marau</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Bairro Bela Vista</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha 05 -->
+        <div class="line-card border border-gray-200 rounded-2xl overflow-hidden" data-zone="norte">
+          <button onclick="toggleLine('l05')"
+            class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors text-left">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0"><span
+                  class="text-white font-extrabold text-sm">05</span></div>
+              <div>
+                <div class="font-bold text-navy-900">Terminal Central → Distrito Industrial Norte</div>
+                <div class="text-sm text-gray-500 mt-0.5">Zona Norte · 45 min · 24 paradas</div>
+              </div>
+            </div>
+            <svg id="icon-l05" class="w-5 h-5 text-gray-400 transition-transform" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div id="l05" class="hidden border-t border-gray-100 bg-gray-50">
+            <div class="p-6 grid md:grid-cols-3 gap-6">
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Dias Úteis</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">05:45</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">07:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">13:30</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">17:45</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Horários – Sábado</h4>
+                <div class="grid grid-cols-3 gap-1.5 text-sm text-gray-700">
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">06:00</span>
+                  <span class="bg-white border border-gray-200 rounded-lg px-2 py-1 text-center">11:30</span>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy-900 mb-3 text-sm uppercase tracking-wide">Itinerário Principal</h4>
+                <ol class="text-sm text-gray-600 space-y-1.5">
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Terminal Central</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Rua Perimetral</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Portão Marcopolo</li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-gray-300 rounded-full mt-1.5 flex-shrink-0"></span>Portão Randon</span></li>
+                  <li class="flex items-start gap-2"><span
+                      class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-1.5 flex-shrink-0"></span>Distrito Industrial
+                    Norte</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-navy-900">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Dúvidas sobre linhas ou horários?</h2>
+      <p class="text-gray-400 mb-8 max-w-lg mx-auto">Nossa equipe está pronta para te ajudar. Entre em contato pelo
+        telefone ou venha até nosso terminal.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:5433711500"
+          class="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all"><svg
+            class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+          </svg>(54) 3371-1500</a>
+        <a href="contato.html"
+          class="inline-flex items-center justify-center gap-2 border border-gray-600 hover:border-orange-400 text-gray-300 hover:text-orange-400 px-8 py-4 rounded-xl font-bold text-lg transition-all">Fale
+          Conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-gray-400 pt-16 pb-8 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="imgs/logo.png" alt="Logo Marisul" class="h-12">
+          </div>
+          <p class="text-sm leading-relaxed">Encurtando caminhos e tornando o dia a dia do marauense mais fácil, prático
+            e confortável desde 1980.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Serviços</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Coletivo</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte de Funcionários</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Escolar</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Transporte Fretado</a></li>
+            <li><a href="servicos.html" class="hover:text-orange-400">Busdoor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">A Empresa</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="empresa.html" class="hover:text-orange-400">Sobre Nós</a></li>
+            <li><a href="frota.html" class="hover:text-orange-400">Nossa Frota</a></li>
+            <li><a href="linhas.html" class="hover:text-orange-400">Linhas e Horários</a></li>
+            <li><a href="relacionamento.html" class="hover:text-orange-400">Relacionamento</a></li>
+            <!-- <li><a href="noticias.html" class="hover:text-orange-400">Notícias</a></li> -->
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contato</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0" fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg><a href="tel:5433711500" class="hover:text-orange-400">(54) 3371-1500</a></li>
+            <li class="flex items-start gap-2"><svg class="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd" />
+              </svg><span>Seg–Sex: 7h–18h<br>Sáb: 7h–13h</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
+        <p>&copy; <span id="ano-atual"></span> Marisul Transportes. Todos os direitos reservados.</p>
+        <script>document.getElementById('ano-atual').textContent = new Date().getFullYear();</script>
+        <div class="flex gap-4"><a href="#" class="hover:text-orange-400">Política de Privacidade</a><a href="#"
+            class="hover:text-orange-400">Política de Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleLine(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      el.classList.toggle('hidden');
+      icon.style.transform = el.classList.contains('hidden') ? '' : 'rotate(180deg)';
+    }
+    function filterLines(zone) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-orange-500', 'text-white');
+        b.classList.add('bg-gray-100', 'text-gray-700');
+      });
+      const active = document.getElementById('btn-' + zone);
+      active.classList.add('bg-orange-500', 'text-white');
+      active.classList.remove('bg-gray-100', 'text-gray-700');
+      document.querySelectorAll('.line-card').forEach(card => {
+        card.style.display = (zone === 'all' || card.dataset.zone === zone) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+
+</html>
